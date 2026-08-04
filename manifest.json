@@ -1,0 +1,21 @@
+{
+  "name": "ULC LexDrive",
+  "short_name": "ULC",
+  "description": "ULC LexDrive is a student-managed platform that consolidates previous year question papers in PDF format for law students.",
+  "start_url": "https://shekharlaw.github.io/ULC-LexDrive/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0056b3",
+ "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
