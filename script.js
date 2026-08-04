@@ -753,7 +753,7 @@ function shareApp() {
     const shareData = {
         title: 'ULC LexDrive',
         text: 'Hey! 📚 Struggling to find past year questions? Download ULC LexDrive! It consolidates all our PYQs in one place and helps us prepare better. Let\'s help each other ace these exams!',
-        url: 'https://ulclexdrive.com'
+        url: 'https://shekharlaw.github.io/ULC-LexDrive/'
     };
     
     if (navigator.share) {
