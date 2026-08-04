@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULC LexDrive</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for App Name -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <!-- SCREEN 1: INTRO SCREEN -->
+    <div id="intro-screen" class="screen active">
+        <div class="college-bg"></div>
+        <div class="blur-overlay">
+            <h1 class="app-title-large">ULC LexDrive</h1>
+            
+            <div class="custom-slider-container">
+                <span class="slider-text">Slide to unlock</span>
+                <input type="range" min="0" max="100" value="0" id="unlock-slider">
+            </div>
+        </div>
+    </div>
+
+    <!-- SCREEN 2: DISCLAIMER SCREEN -->
+    <div id="disclaimer-screen" class="screen">
+        <div class="disclaimer-box">
+            <h2><i class="fas fa-exclamation-triangle"></i> Disclaimer</h2>
+            <p>ULC LexDrive is independently created by a student and is not affiliated with ULC VBU. All materials are provided for educational and reference purposes only.</p>
+            <button id="btn-accept-disclaimer">Continue</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 3: MAIN APP -->
+    <div id="main-app" class="screen">
+        
+        <header class="app-header">
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <img src="images/logo.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 10px; object-fit: cover;">
+                <h1 class="header-title">ULC LexDrive</h1>
+            </div>
+            <button id="theme-btn" class="theme-btn" onclick="toggleTheme()">
+                <i id="theme-icon" class="fas fa-sun"></i>
+            </button>
+        </header>
+
+        <div class="app-content">
+            
+            <!-- VIEW 1: HOME (PYQs) -->
+            <div id="view-home" class="view active">
+                <div class="class-tabs anim-item" style="--delay: 0.05s">
+                    <button class="tab-btn active" onclick="switchClass('ballb', this)">BA LL.B.</button>
+                    <button class="tab-btn" onclick="switchClass('llb', this)">LL.B.</button>
+                    <div id="tab-indicator" class="tab-indicator"></div>
+                </div>
+                
+                <div id="ballb" class="class-content active">
+                    <details class="anim-item" style="--delay: 0.15s; margin-bottom: 20px;">
+                        <summary>
+                            <div class="sem-title-area">Syllabus (BA LL.B.)</div>
+                            <!-- CHANGED TO syllabus-img.png -->
+                            <img src="images/syllabus-img.png" alt="Syllabus Graphic" class="sem-illustration">
+                        </summary>
+                        <div class="session-item">
+                            <div class="session-header">
+                                <h4>Complete Course Syllabus</h4>
+                                <div class="action-btns">
+                                    <a href="https://drive.google.com/file/d/1iQtjuEYmjxq9gwTVaPIvuikNka-Asm8C/view?usp=drive_link" target="_blank" class="btn-view"><i class="fas fa-eye"></i> View</a>
+                                    <a href="https://raw.githubusercontent.com/ShekharLaw/ULC-LexDrive/main/Pdfs/0.Syllabus.pdf" target="_blank" class="btn-download"><i class="fas fa-download"></i> PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                    <div id="ballb-semesters"></div>
+                </div>
+                
+                <div id="llb" class="class-content">
+                    <details class="anim-item" style="--delay: 0.15s; margin-bottom: 20px;">
+                        <summary>
+                            <div class="sem-title-area">Syllabus (LL.B.)</div>
+                            <!-- CHANGED TO syllabus-img.png -->
+                            <img src="images/syllabus-img.png" alt="Syllabus Graphic" class="sem-illustration">
+                        </summary>
+                        <div class="session-item">
+                            <div class="session-header">
+                                <h4>Complete Course Syllabus</h4>
+                                <div class="action-btns">
+                                    <a href="https://drive.google.com/file/d/1iQt4kjuE9Ymjxq9gwTVaPIvuikNka-Asm8C/view?usp=drive_link" target="_blank" class="btn-view"><i class="fas fa-eye"></i> View</a>
+                                    <a href="https://drive.google.com/file/d/1iQt4kjuE9Ymjxq9gwTVaPIvuikNka-Asm8C/view?usp=drive_link" target="_blank" class="btn-download"><i class="fas fa-download"></i> PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                    <div id="llb-semesters"></div>
+                </div>
+            </div>
+
+            <!-- VIEW 2: UPLOAD -->
+            <div id="view-upload" class="view">
+                <div class="upload-header anim-item" style="--delay: 0.05s; padding-bottom: 15px;">
+                    <h2>Help Fellow Students</h2>
+                    <p>Got previous year questions. Upload them here to contribute to our library.</p>
+                </div>
+
+                <div class="anim-item" style="--delay: 0.15s; text-align: left; background: var(--bg-color); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); margin: 0 20px 25px 20px; font-size: 0.95rem; line-height: 1.6;">
+                    <p style="margin-bottom: 12px;">Please read these rules carefully before uploading any PDF to <strong>ULC LexDrive</strong>.</p>
+                    <ul style="margin-left: 20px; margin-bottom: 15px; color: var(--text-color);">
+                        <li style="margin-bottom: 8px;">Upload <strong>only those PDFs that are not already available</strong>.</li>
+                        <li style="margin-bottom: 8px;">Upload a PDF <strong>only once</strong>. Avoid duplicate submissions.</li>
+                        <li style="margin-bottom: 8px;">Fill in <strong>all details correctly</strong>.</li>
+                        <li style="margin-bottom: 8px;">Upload <strong>clear and readable PDF files only</strong>.</li>
+                        <li style="margin-bottom: 8px;"><strong>Do not upload password-protected or encrypted PDFs.</strong></li>
+                    </ul>
+                    <p style="text-align: center; font-weight: bold; color: var(--primary-color);">Thank you for contributing responsibly!</p>
+                </div>
+
+                <div class="upload-action anim-item" style="--delay: 0.25s;">
+                    <a href="https://forms.gle/ynXSQjMWM8Kokg2h6" target="_blank" class="upload-btn upload-btn-glow">
+                        <i class="fas fa-cloud-upload-alt"></i> Upload via Google Form
+                    </a>
+                </div>
+            </div>
+            
+            <!-- VIEW 3: INFORMATION -->
+            <div id="view-info" class="view">
+                <h2 class="info-title anim-item" style="--delay: 0.05s;">App Information</h2>
+                <div class="info-list">
+                    <div class="info-bar anim-item" style="--delay: 0.1s;" onclick="openFullScreenModal('About', contentAbout)">
+                        <span>1. About</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.15s;" onclick="openFullScreenModal('Idea', contentIdea)">
+                        <span>2. Idea</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.2s;" onclick="openFullScreenModal('Tutorial', contentTutorial)">
+                        <span>3. Tutorial</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.25s;" onclick="openFullScreenModal('FAQ', contentFAQ)">
+                        <span>4. FAQ</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.3s;" onclick="openFullScreenModal('Our Team', contentTeam)">
+                        <span>5. Our Team</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.35s;" onclick="openFullScreenModal('Feedback', contentFeedback)">
+                        <span>6. Feedback</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.4s;" onclick="openFullScreenModal('Disclaimer', contentDisclaimer)">
+                        <span>7. Disclaimer</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="info-bar anim-item" style="--delay: 0.45s;" onclick="openFullScreenModal('Data Policy', contentDataPolicy)">
+                        <span>8. Data Policy</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="info-bottom anim-item" style="--delay: 0.55s;">
+                    <div class="share-download-container">
+                        <button id="shareBtn" onclick="shareApp()">
+                            Share the App
+                        </button>
+                        <a href="lexdrive.apk" download id="downloadApkBtn" title="Download App">
+                            <i class="fab fa-android"></i>
+                        </a>
+                    </div>
+                    <div class="made-with-love">
+                        Made with 
+                        <svg class="heart-glow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg> 
+                        for students
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active" onclick="switchView('view-home', this)">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item" onclick="switchView('view-upload', this)">
+                <i class="fas fa-upload"></i>
+                <span>Upload</span>
+            </div>
+            <div class="nav-item" onclick="switchView('view-info', this)">
+                <i class="fas fa-info-circle"></i>
+                <span>Info</span>
+            </div>
+        </nav>
+        
+        <div id="full-screen-modal" class="full-screen-modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Title</h3>
+                <button onclick="closeFullScreenModal()" class="close-btn-red">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-content">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
