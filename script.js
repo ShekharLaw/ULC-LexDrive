@@ -656,6 +656,10 @@ const contentFAQ = `
         <summary>7. What is the cost of using ULC LexDrive?</summary>
         <p>ULC LexDrive is completely free. We do not ask for money at any time or in any form. This project is created solely to help students.</p>
     </details>
+	<details class="faq-details anim-item" style="--delay: 0.45s;">
+        <summary>8. How can I use the platform for btter experience?</summary>
+        <p>For a better experience, add this platform to your device's Home Screen so you can open it like an app. A step-by-step guide is available in the Tutorial section.</p>
+    </details>
 `;
 
 const contentTeam = `
