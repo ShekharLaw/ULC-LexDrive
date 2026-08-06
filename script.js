@@ -664,7 +664,7 @@ const contentFAQ = `
 
 const contentTeam = `
     <div class="anim-item" style="--delay: 0.1s; text-align: center; margin-bottom: 20px;">
-        <h3>Creator Name</h3>
+        <h3>Shekhar Raj</h3>
         <p>Student Developer</p>
         <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
             <a href="https://www.linkedin.com/in/shekhar-raj-b7a688415" target="_blank" style="color: #0077b5; font-size: 1.8rem;"><i class="fab fa-linkedin"></i></a>
