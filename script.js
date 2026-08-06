@@ -625,6 +625,23 @@ const contentTutorial = `
             <img src="images/tut4.jpg" alt="Step 4" style="width: 100%; border-radius: 8px; margin: 10px 0; border: 1px solid var(--border-color);">
         </li>
     </ol>
+
+    <hr class="anim-item" style="--delay: 0.55s; margin: 25px 0; border: 0; border-top: 2px solid var(--border-color);">
+    
+    <p class="anim-item" style="--delay: 0.6s;"><strong>How to Add to Home Screen:</strong></p>
+    <ul style="margin-left: 20px; line-height: 1.8; margin-top:10px;">
+        <li class="anim-item" style="--delay: 0.65s;">
+            Tap on the <strong>three dots</strong> of your browser's menu.
+        </li>
+        <li class="anim-item" style="--delay: 0.7s;">
+            Select <strong>"Add to Home screen"</strong>.
+        </li>
+        <li class="anim-item" style="--delay: 0.75s;">
+            Click either on <strong>"Install App"</strong> or <strong>"Create Shortcut"</strong> to access ULC LexDrive directly from your phone's home screen.
+            <br>
+            <img src="images/tut5.jpg" alt="Add to Home Screen" style="width: 100%; border-radius: 8px; margin: 10px 0; border: 1px solid var(--border-color);">
+        </li>
+    </ul>
 `;
 
 const contentFAQ = `
