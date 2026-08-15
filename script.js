@@ -579,7 +579,7 @@ const contentAbout = `
             </div>
             
             <p class="anim-item" style="--delay: 0.1s;">ULC LexDrive is a student-created platform designed to consolidate college previous year question paper PDFs in one place.</p>
-            <p class="anim-item" style="--delay: 0.2s; margin-top: 15px;">Many students find it difficult to locate old question papers because they are scattered across WhatsApp groups, different folders and personal devices. ULC LexDrive aims to make access easier by organising these PDFs in a simple and convenient manner.</p>
+            <p class="anim-item" style="--delay: 0.2s; margin-top: 15px;">Many students find it difficult to locate old question papers because they are scattered across WhatsApp groups, different folders and personal devices. ULC LexDrive aims to make access easier by organizing these PDFs in a simple and convenient manner.</p>
             <p class="anim-item" style="--delay: 0.3s; margin-top: 15px;">The purpose of this platform is only to:</p>
             <ul class="anim-item" style="--delay: 0.4s; margin-left: 20px; line-height: 1.6; margin-top: 5px;">
                 <li>Collect available college PYQ PDFs</li>
