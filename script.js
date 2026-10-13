@@ -645,7 +645,7 @@ const contentAbout = `
             <p class="anim-item" style="--delay: 0.6s; margin-top: 20px; font-weight: bold; text-align: center; color: var(--primary-color);">Dedicated to law students</p>
         </div>
         <div class="anim-item" style="--delay: 0.7s; text-align: center; font-weight: bold; margin-top: 40px; color: #888;">
-            Version 1.0.0
+            Version 1.1.0
         </div>
     </div>
 `;
