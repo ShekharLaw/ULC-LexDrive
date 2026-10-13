@@ -365,19 +365,61 @@ const pyqData = [
         ]
     },
     {
-        semester: 7,
-        sessions: [
-            {
-                year: "No Data",
-                isLinkAvailable: false,
-                viewLink: "#",
-                downloadLink: "#",
-                subjects: [
-                    { name: "No data available", available: false }
-                ]
-            }
-        ]
-    },
+    semester: 7,
+    sessions: [
+        {
+            year: "2019-24",
+            isLinkAvailable: true,
+            viewLink: "https://drive.google.com/file/d/1xvdIKhZ2UHpytT8QqytCvESLfkkiHzHG/view?usp=drivesdk",
+            downloadLink: "https://raw.githubusercontent.com/ShekharLaw/ULC-LexDrive/main/Pdfs/7.19-24.pdf",
+            subjects: [
+                { name: "Major: History", available: true },
+                { name: "Affirmative Action", available: true },
+                { name: "BSA", available: true },
+                { name: "CPC", available: true },
+                { name: "Media Law", available: true }
+            ]
+        },
+        {
+            year: "2020-25",
+            isLinkAvailable: true,
+            viewLink: "https://drive.google.com/file/d/1ezY1LwjUbRXpZQFE2r539PTVcxqioBBA/view?usp=drivesdk",
+            downloadLink: "https://raw.githubusercontent.com/ShekharLaw/ULC-LexDrive/main/Pdfs/7.20-25.pdf",
+            subjects: [
+                { name: "CPC", available: true },
+                { name: "BSA", available: true },
+                { name: "Media Law", available: true },
+                { name: "Affirmative Action", available: true }
+            ]
+        },
+        {
+            year: "2021-26",
+            isLinkAvailable: true,
+            viewLink: "https://drive.google.com/file/d/1baBV_fTLxcWfaj8uRfOD0NR-JRG8prjB/view?usp=drivesdk",
+            downloadLink: "https://raw.githubusercontent.com/ShekharLaw/ULC-LexDrive/main/Pdfs/7.21-26.pdf",
+            subjects: [
+                { name: "Major: Sociology", available: true },
+                { name: "Affirmative Action", available: true },
+                { name: "Media Law", available: true },
+                { name: "BSA", available: true },
+                { name: "CPC", available: true }
+            ]
+        },
+        {
+            year: "2022-27",
+            isLinkAvailable: true,
+            viewLink: "https://drive.google.com/file/d/1DaeU5yqe2DIEJKYvhf-FxZJ4esT9zi0R/view?usp=drivesdk",
+            downloadLink: "https://raw.githubusercontent.com/ShekharLaw/ULC-LexDrive/main/Pdfs/7.22-27.pdf",
+            subjects: [
+                { name: "Major: History+Political Science+Sociology", available: true },
+                { name: "BSA", available: true },
+                { name: "Media Law", available: true },
+                { name: "Affirmative Action", available: true },
+                { name: "CPC", available: true }
+            ]
+        }
+    ]
+}
     {
         semester: 8,
         sessions: [
