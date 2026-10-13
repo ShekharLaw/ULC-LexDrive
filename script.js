@@ -419,7 +419,7 @@ const pyqData = [
             ]
         }
     ]
-}
+},
     {
         semester: 8,
         sessions: [
