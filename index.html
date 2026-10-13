@@ -43,9 +43,53 @@
                 <img src="images/logo.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 10px; object-fit: cover;">
                 <h1 class="header-title">ULC LexDrive</h1>
             </div>
-            <button id="theme-btn" class="theme-btn" onclick="toggleTheme()">
-                <i id="theme-icon" class="fas fa-sun"></i>
-            </button>
+            
+            <!-- Added wrapper for header buttons -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                
+                <!-- Notification Container -->
+                <div class="notification-container">
+                    <button id="notify-btn" class="theme-btn" onclick="toggleNotifications()">
+                        <i class="fas fa-bell"></i>
+                        <span id="notify-badge" class="notify-badge"></span>
+                    </button>
+                    
+                    <!-- Notification Dropdown -->
+                    <div id="notification-dropdown" class="notification-dropdown">
+                        <div class="notification-header">
+                            <h4>Recently Added</h4>
+                        </div>
+                        <div class="notification-list">
+                            <!-- Example Item 1 -->
+                            <div class="notification-item">
+                                <p><strong>Semester 6 - Session 2023-28</strong></p>
+                                <span>Added on: 13 Oct. 2026</span>
+                            </div>
+                            <!-- Example Item 2 -->
+                            <div class="notification-item">
+                                <p><strong>Semester 7 - Session 2022-27</strong></p>
+                                <span>Added on: 13 Oct. 2026</span>
+                            </div>
+                            <div class="notification-item">
+                                <p><strong>Semester 7 - Session 2021-26</strong></p>
+                                <span>Added on: 13 Oct. 2026</span>
+                            </div>
+                            <div class="notification-item">
+                                <p><strong>Semester 7 - Session 2020-25</strong></p>
+                                <span>Added on: 13 Oct. 2026</span>
+                            </div>
+                            <div class="notification-item">
+                                <p><strong>Semester 7 - Session 2019-24</strong></p>
+                                <span>Added on: 13 Oct. 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="theme-btn" class="theme-btn" onclick="toggleTheme()">
+                    <i id="theme-icon" class="fas fa-sun"></i>
+                </button>
+            </div>
         </header>
 
         <div class="app-content">
