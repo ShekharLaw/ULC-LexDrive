@@ -818,3 +818,27 @@ document.addEventListener('click', function(e) {
         }
     }
 });
+// --- 11. Notification Dropdown & Badge Logic ---
+function toggleNotifications() {
+    const dropdown = document.getElementById('notification-dropdown');
+    const badge = document.getElementById('notify-badge');
+    
+    // Toggle the dropdown display
+    dropdown.classList.toggle('active');
+    
+    // Remove the red dot when clicked
+    if (!badge.classList.contains('hidden')) {
+        badge.classList.add('hidden');
+    }
+}
+
+// Close the notification dropdown if the user clicks outside of it
+document.addEventListener('click', function(e) {
+    const container = document.querySelector('.notification-container');
+    const dropdown = document.getElementById('notification-dropdown');
+    
+    // If the click is outside the notification container and the dropdown is active, close it
+    if (container && !container.contains(e.target) && dropdown.classList.contains('active')) {
+        dropdown.classList.remove('active');
+    }
+});
