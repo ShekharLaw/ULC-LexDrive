@@ -348,6 +348,19 @@ const pyqData = [
                     { name: "IPC", available: true },
                     { name: "Professional Ethics", available: true }
                 ]
+           },
+			{
+                year: "2023-28",
+                isLinkAvailable: true,
+                viewLink: "https://drive.google.com/file/d/160U_x2S-XZhoMhCzC_ikTsn9RVVi0zgu/view?usp=drivesdk",
+                downloadLink: "https://raw.githubusercontent.com/ShekharLaw/ULC-LexDrive/main/Pdfs/6.23-28.pdf",
+                subjects: [
+                    { name: "Major: Sociology", available: true },
+					{ name: "BNSS", available: true },
+					{ name: "Professional Ethics", available: true },
+					{ name: "Women & Law", available: true },
+					{ name: "BNS", available: true }
+                ]
             }
         ]
     },
